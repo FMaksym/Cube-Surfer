@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 856b4b9fb6369674295fece2210dbdf3
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 1
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beard2
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0, y: 1.1142739, z: 0.30056217}
+      rotation: {x: -0.041295867, y: 0, z: -0, w: 0.999147}
+      scale: {x: 41.718437, y: 7.11454, z: 41.579346}
+    - name: Beard1
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0, y: 1.1142739, z: 0.30056217}
+      rotation: {x: -0.041295867, y: 0, z: -0, w: 0.999147}
+      scale: {x: 41.718437, y: 7.11454, z: 41.579346}
+    - name: Legs
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0, y: -2.047996, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 24.191862, y: 24.191862, z: 24.191862}
+    - name: EyeBrows
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: 0.0035010402, y: 0.071188234, z: -0.015392207}
+      rotation: {x: 1, y: 0, z: 0, w: 0.0000000754979}
+      scale: {x: -5.3519, y: -5.3519, z: -0.55481267}
+    - name: Eyes
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0.000000014901161, y: 0.00000011853647, z: -0.015392216}
+      rotation: {x: 1, y: 0, z: 0, w: 0.0000000754979}
+      scale: {x: -5.3519, y: -5.3519, z: -0.55481267}
+    - name: Bandana
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0, y: -2.047996, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 24.191862, y: 24.191862, z: 24.191862}
+    - name: Hair
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0, y: 1.2713277, z: 0}
+      rotation: {x: -0.70710677, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 25.97402, y: 25.97402, z: 25.97402}
+    - name: Hand
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: 0.4601946, y: 0.3437027, z: 0.15138777}
+      rotation: {x: -0.7856795, y: 0.04942671, z: -0.038716983, w: 0.6154395}
+      scale: {x: 83.14311, y: 83.14312, z: 83.14312}
+    - name: Hook
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0.42741394, y: 0.39463294, z: 0.09156783}
+      rotation: {x: -0.19517303, y: -0.45988607, z: 0.8397863, w: 0.21253544}
+      scale: {x: 3.038687, y: 3.0386868, z: 3.0386868}
+    - name: Torso
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0, y: -2.047996, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 24.191862, y: 24.191862, z: 24.191862}
+    - name: Lamp
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -4.0762453, y: 5.903862, z: 1.724816}
+      rotation: {x: 0.75393134, y: -0.28138402, z: 0.5232988, w: 0.28030172}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Camera
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -2.2291532, y: 2.3097, z: 6.4132385}
+      rotation: {x: -0.017927097, y: -0.9798217, z: 0.10310411, w: -0.17028724}
+      scale: {x: 99.99999, y: 99.99999, z: 99.99999}
+    - name: Hat
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: 0.000695242, y: 1.5486722, z: -0.08848}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 68.54524, y: 136.14772, z: 68.54524}
+    - name: Beard0
+      parentName: ImageToStl.com_sketchfab_2017_02_17_23_36_40(Clone)
+      position: {x: -0, y: 1.0156771, z: 0.28640935}
+      rotation: {x: -0.041295867, y: 0, z: -0, w: 0.999147}
+      scale: {x: 17.873697, y: 3.0481284, z: 17.814104}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
