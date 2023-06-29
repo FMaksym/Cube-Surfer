@@ -2,7 +2,7 @@
   Cube Surfer
 </h1> 
 
-<p align="center"> <img src="https://github.com/FMaksym/Cube-Surfer/blob/main/Foto-Video/CubeSurferVideo.gif" width="850" height="500"/> </p>
+<p align="center"> <img src="https://github.com/FMaksym/Cube-Surfer/blob/main/Foto-Video/CubeSurferVideo.gif" width="850" height="450"/> </p>
 
 ---
 
