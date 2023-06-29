@@ -87,7 +87,7 @@ public class MovementPlayer : MonoBehaviour
 
     private void MobileInput()
     {
-        _forwardMovementSpeed = 15f;
+        _forwardMovementSpeed = 3f;
         _horizontalMovementSpeed = 250f;
         if (Input.touchCount > 0)
         {

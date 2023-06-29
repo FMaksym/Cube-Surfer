@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
@@ -16,18 +14,12 @@ public class PlayerCubeTrigger : MonoBehaviour
         }
         else if (other.gameObject.GetComponent<ObstacleCube>())
         {
-            //playerBox.DecreaseTowerSize(gameObject);
             StartCoroutine(playerBox.GameOver());
         }
 
         if (other.gameObject.GetComponent<Coin>())
         {
             Destroy(other.gameObject);
-        }
-
-        if (other.gameObject.GetComponent<Finish>())
-        {
-            StartCoroutine(playerBox.GameOver());
         }
     }
 }

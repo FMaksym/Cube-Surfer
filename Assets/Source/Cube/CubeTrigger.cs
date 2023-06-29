@@ -8,12 +8,12 @@ public class CubeTrigger : MonoBehaviour
     [SerializeField] private CubeToAddController cubeToAddController;
     [Inject] public PlayerBoxStack playerBox;
 
-    private Road road;
+    //private Road road;
 
-    private void Start()
-    {
-        road = GetComponentInParent<Road>();
-    }
+    //private void Start()
+    //{
+    //    road = GetComponentInParent<Road>();
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
@@ -35,11 +35,6 @@ public class CubeTrigger : MonoBehaviour
         if (other.gameObject.GetComponent<Coin>())
         {
             Destroy(other.gameObject);
-        }
-
-        if (other.gameObject.GetComponent<Finish>())
-        {
-            StartCoroutine(playerBox.GameOver());
         }
     }
 }

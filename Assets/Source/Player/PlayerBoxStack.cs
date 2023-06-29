@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Zenject;
 
 public class PlayerBoxStack : MonoBehaviour
@@ -15,23 +14,23 @@ public class PlayerBoxStack : MonoBehaviour
     [Header("Player Animator")]
     [SerializeField] private PlayerAnimation _animator;
     [SerializeField] private AddBlockEffect floatingText;
+    [SerializeField] public TrailRenderer _cubeTrail;
+    private Vector3 _trailInitialPosition;
+    private Vector3 _cubeTrailInitialPosition;
 
     private void Start()
     {
         gameManager.SetGameOver(false);
-        UpdateTowerSize();
+        _lastBox = _boxList[_boxList.Count - 1];
+        //_trailInitialPosition = new Vector3(_cubeTrail.transform.position.x, _cubeTrail.transform.position.y, _cubeTrail.transform.position.z);
+        _trailInitialPosition = _cubeTrail.transform.position;
+        _cubeTrailInitialPosition = _cubeTrail.transform.localPosition;
     }
 
     public void IncreaseTowerSize(GameObject block)
     {
         transform.position = new Vector3(transform.position.x, transform.position.y + _boxHeight * 1.5f, transform.position.z);
-
-        //transform.Translate(0f, _boxHeight * 1.5f, 0f, Space.World);
-
-        //block.transform.position = new Vector3(transform.position.x, _lastBox.transform.position.y - _boxHeight, transform.position.z);
         block.transform.position = new Vector3(_boxSpawnPos.transform.position.x, _lastBox.transform.position.y - _boxHeight, _boxSpawnPos.transform.position.z);
-        //block.transform.localPosition = new Vector3(0f, -_boxHeight, 0f);
-        //block.transform.position = _boxSpawnPos.position;
         floatingText.ShowFloatingText(block.transform.position);
         block.transform.SetParent(_tower);
         _boxList.Add(block);
@@ -51,14 +50,20 @@ public class PlayerBoxStack : MonoBehaviour
 
     private void UpdateTowerSize()
     {
-        _lastBox = _boxList[_boxList.Count-1];
+        _lastBox = _boxList[_boxList.Count - 1];
+        Vector3 newTrailPosition = new Vector3(_cubeTrailInitialPosition.x, _trailInitialPosition.y, _cubeTrailInitialPosition.z);
+        newTrailPosition = transform.TransformPoint(newTrailPosition);
+        _cubeTrail.transform.position = newTrailPosition;
     }
 
     public IEnumerator GameOver()
     {
         _animator.SetGameOverAnimation(true);
         gameManager.SetGameOver(true);
-        Debug.Log(gameManager.GameOver);
+        if (Application.isMobilePlatform)
+        {
+            Handheld.Vibrate();
+        }
         yield return new WaitForSeconds(1);
     }
 }

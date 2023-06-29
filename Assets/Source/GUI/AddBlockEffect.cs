@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AddBlockEffect : MonoBehaviour
@@ -10,7 +8,7 @@ public class AddBlockEffect : MonoBehaviour
     {
         TextMesh floatingText = Instantiate(_floatingTextPrefab, position, Quaternion.identity, transform);
         floatingText.text = "+1";
-        StartCoroutine(WaitAndDestroy(floatingText));
+        Destroy(floatingText.gameObject,1);
     }
 
     public void ShowFloatingText(Vector3 position)
@@ -19,11 +17,5 @@ public class AddBlockEffect : MonoBehaviour
         {
             FloatingText(position);
         }
-    }
-
-    IEnumerator WaitAndDestroy(TextMesh floatingText)
-    {
-        yield return new WaitForSeconds(1);
-        Destroy(floatingText.gameObject);
     }
 }

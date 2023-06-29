@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,6 +5,11 @@ public class GameManager : MonoBehaviour
     public bool GameStarted { get; private set; }
     public bool GameOver { get; private set; }
     public bool Pause { get; private set; }
+
+    private void Start()
+    {
+        Application.targetFrameRate = 2000;
+    }
 
     public void StartGame(bool value)
     {
